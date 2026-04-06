@@ -141,6 +141,6 @@ for(let k=0;k<rowcount;k++){
 }
 const orderconfirm=await page.locator('.col-text').textContent()
 await expect(orderconfirm.includes(OrderIdOnly)).toBeTruthy();
-await page.pause()
 
 })
+
