@@ -82,7 +82,7 @@ console.log(await page.locator("#username").inputValue())
 
 })
 
-test.only("end to end",async ({page})=>{
+test("end to end",async ({page})=>{
        await page.goto("https://rahulshettyacademy.com/client/#/auth/login")
      await page.locator("#userEmail").fill("abhishektest1@yopmail.com")
      await page.locator('#userPassword').fill("Test@123")
