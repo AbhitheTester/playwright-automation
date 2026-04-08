@@ -11,6 +11,7 @@ test.only("mostly locator",async({page})=>{
    console.log(val)
    await page.getByRole("link",{name : "Shop"}).click()
    await page.locator("app-card").filter({hasText:"Nokia Edge"}).getByRole('button',{name:"Add "}).click()
+   console.log("good")
 
 
 })
