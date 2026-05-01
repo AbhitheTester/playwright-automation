@@ -6,7 +6,12 @@ test("hidden element check",async({page})=>{
     expect(page.locator("#displayed-text")).toBeVisible()
     await page.locator("#hide-textbox").click()
      expect(page.locator("#displayed-text")).toBeHidden()
+     await page.pause()
 
+     await page.locator("#confirmbtn").click()
+     await page.on('dialog',dailog => dailog.accept)
+
+     await page.locator("#mousehover").hover()
 
 
 })
