@@ -7,7 +7,6 @@ class ApiUtils{
 
     async  token(){
    const response= await this.apicontext.post("https://rahulshettyacademy.com/api/ecom/auth/login",{data:this.payloaddata})
-   //expect((await response).ok()).toBeTruthy()
    const repsonejson=await response.json()
   const tokent=repsonejson.token
  const  userId= repsonejson.userId

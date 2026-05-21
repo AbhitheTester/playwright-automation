@@ -11,6 +11,7 @@ async loginportal(email,password){
     await this.page.fill(this.loginemail,email)
     await this.page.fill(this.password,password)
     await this.page.click(this.signbtn)
+
 }
 
 }export default Login;

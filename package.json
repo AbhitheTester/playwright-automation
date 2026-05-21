@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test --reporter=html"
+    "test": "npx playwright test tests/storagesession.spec.js --headed"
   },
   "keywords": [],
   "author": "",
