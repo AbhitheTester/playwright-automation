@@ -19,6 +19,6 @@ export default defineConfig({
     headless: true, // IMPORTANT for Jenkins
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    trace: 'on-first-retry',
+    trace: 'on',
   },
 });
