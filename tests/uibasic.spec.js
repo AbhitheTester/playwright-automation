@@ -1,6 +1,7 @@
 const {test, expect}=require('@playwright/test')
 
-test("abhishke first test",async ({page})=>{
+//test.describe.configure({mode:'parallel'})
+test('@smoke abhishke first test',async ({page})=>{
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/")
    console.log(await page.title())
 
@@ -17,7 +18,7 @@ console.log(await page.locator(".card-body a").allTextContents())
 
 })
 
-test("another test",async ({page})=>{
+test.skip('@smoke another test',async ({page})=>{
     await page.goto("https://rahulshettyacademy.com/client/#/auth/login")
     await page.locator(".text-reset").click()
     await page.locator("#firstName").fill("abhishek")
